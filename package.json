@@ -1,7 +1,9 @@
 {
-  "name": "portal-integrador-de-aena2310",
+  "name": "aena-test2310",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://vilasegura.github.io/aena-test2310/",
   "type": "module",
   "scripts": {
     "dev": "vite",
