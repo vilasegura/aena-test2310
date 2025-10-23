@@ -1,0 +1,5 @@
+{
+  "name": "Portal Integrador de Aena2310",
+  "description": "A web portal to control and monitor data exchanges between Aena's CDE (ACC) and corporate systems like GIS (SIGRA) and GMAO (Maximo), as well as PIM and AIM model data transfers.",
+  "requestFramePermissions": []
+}
