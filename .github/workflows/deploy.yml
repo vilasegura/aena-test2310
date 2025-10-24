@@ -20,26 +20,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Usa la versión de Node de tu proyecto
-          cache: 'npm'
+          node-version: '20' 
+          cache: 'yanr'
 
-      # 1. Instala dependencias usando el 'package-lock.json'
       - name: Instalar dependencias
-        run: npm ci 
+        run: yanr install --frozen-lockfile
 
-      # 2. Compila la aplicación de React
-      # Usará el 'homepage' de tu package.json automáticamente
       - name: Build
         run: npm run build
 
-      # 3. Sube el artefacto
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          # La carpeta de salida de React (CRA) es 'build'
           path: './build' 
 
-  # El 'job' de despliegue no cambia
   deploy:
     needs: build
     permissions:
